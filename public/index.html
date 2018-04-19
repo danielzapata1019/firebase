@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Chat</title>        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>                
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script> 
+    </head>
+    <body>
+        <section id="login" style="display:block;">
+            <button id="btnGoogle" type="button">Iniciar sesión con Google</button>
+        </section>
+
+        <div id="chat" style="display:none;">
+            Bienvenido <span id="user"></span>
+            <br><br>
+                <form action="">
+                       
+                        <div>
+                                <label for="txtMensaje">Mensaje</label>
+                                <textarea id="mensaje"></textarea>
+                        </div>
+                        <br>
+                        <div>
+                            <button id="btnEnviar" type="button">Enviar</button>
+                        </div>            
+                    </form>
+                <ul id="chatUl">   
+                </ul>
+            
+        </div>  
+        <script src="js/main.js"></script>
+</body>
+</html>
